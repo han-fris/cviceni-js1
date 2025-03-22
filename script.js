@@ -73,7 +73,7 @@ document.body.innerHTML += vyplata;
 document.body.innerHTML += '<br>';
 document.body.innerHTML += '12' + 13;
 */
-
+/* CVICENI
 document.body.innerHTML += 'Náhodné číslo' + '</br>';
 document.body.innerHTML += Math.random();
 document.body.innerHTML += '<br>';
@@ -91,3 +91,29 @@ const start = 15;
 const delka = 18;
 const konec = (start + delka) % 24;
 document.body.innerHTML += 'Běžec doběhne v ' + konec + ' hod';
+*/
+// Vstup od uživatele a převod na číslo
+/*document.body.innerHTML += '<br>';
+const start = 15;
+const delka = Number(prompt('Zadej délku závodu:'));
+const konec = (start + delka) % 24;
+document.body.innerHTML += 'Běžec doběhne v ' + konec + ' hod';
+*/
+//cvičení vstup a výstup
+/*
+const jmeno = prompt('Zadej jméno a příjmení:');
+const vek = Number(prompt('Zadej svůj věk:'));
+document.body.innerHTML += jmeno + ', věk: ' + vek;
+*/
+//cviceni hodinova sazba
+/*const hodinovaSazba = Number(prompt('Zadej svou hodinovou sazbu v korunách'));
+const hrubaMzda = hodinovaSazba * 8 * 21;
+document.body.innerHTML += 'Vaše hrubá mzda je ' + hrubaMzda + ' korun.';
+*/
+/*
+const hodinovaSazba = Number(prompt('Zadej svou hodinovou sazbu v korunách'));
+const pracovniDoba = Number(prompt('Jaká je pracovní doba?'));
+const odpracovaneDny = Number(prompt('Kolik hodin jsi odpracoval měsíci?'));
+const hrubaMzda = hodinovaSazba * pracovniDoba * odpracovaneDny;
+document.body.innerHTML += 'Vaše hrubá mzda je ' + hrubaMzda + ' korun.';
+*/
