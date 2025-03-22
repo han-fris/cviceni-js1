@@ -73,3 +73,21 @@ document.body.innerHTML += vyplata;
 document.body.innerHTML += '<br>';
 document.body.innerHTML += '12' + 13;
 */
+
+document.body.innerHTML += 'Náhodné číslo' + '</br>';
+document.body.innerHTML += Math.random();
+document.body.innerHTML += '<br>';
+document.body.innerHTML += Math.ceil(Math.random() * 1000) + 1;
+document.body.innerHTML += '<br>';
+document.body.innerHTML += '<br>';
+
+let wageInEur = 20;
+let wageInCzk = Math.round(wageInEur * 24.55);
+document.body.innerHTML += 'Mzda v korunách: ' + wageInCzk + ' Kč';
+document.body.innerHTML += '<br>';
+document.body.innerHTML += '<br>';
+
+const start = 15;
+const delka = 18;
+const konec = (start + delka) % 24;
+document.body.innerHTML += 'Běžec doběhne v ' + konec + ' hod';
