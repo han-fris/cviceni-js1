@@ -117,3 +117,125 @@ const odpracovaneDny = Number(prompt('Kolik hodin jsi odpracoval měsíci?'));
 const hrubaMzda = hodinovaSazba * pracovniDoba * odpracovaneDny;
 document.body.innerHTML += 'Vaše hrubá mzda je ' + hrubaMzda + ' korun.';
 */
+//OBJEKTY
+/*
+const address = {
+  celeJmeno: {
+    krestniJmeno: 'Jan',
+    prijmeni: 'Nový',
+  },
+  ulice: 'Národní',
+  cislo: 20,
+  mesto: 'Praha 1',
+  smerovaciCislo: '110 00',
+};
+
+address.celeJmeno.krestniJmeno = 'Josef';s
+
+document.body.innerHTML += '<p>' + address.celeJmeno.krestniJmeno + '</p>';
+*/
+//PŘIPRAVENÉ OBJEKTY
+/*
+document.body.innerHTML += window.innerWidth;
+*/
+//DYNAMICKÁ ZMĚNA NÁZVU STRÁNKY
+/*
+document.title = 'Kimonové šaty';
+*/
+
+//CVIČENÍ REALITKA
+/*
+const apartment = {
+  type: 'rent',
+  disposition: '3+1',
+  area: {
+    floorage: 100,
+    balcony: 2,
+    units: 'sqm',
+  },
+  city: 'Prague',
+  district: 'Old Town',
+  price: {
+    rent: 28000,
+    fees: {
+      water: 1000,
+      energy: 2500,
+      services: 560,
+    },
+    currency: 'czk',
+  },
+  ownership: 'personal',
+  condition: 'renovated',
+  status: 'free',
+  floor: 3,
+};
+
+document.body.innerHTML = '<h1>' + 'Inzerát na byt' + '</h1>';
+document.body.innerHTML += 'Dispositon: ' + apartment.disposition + '<br>';
+document.body.innerHTML +=
+  'Florage: ' + apartment.area.floorage + ' ' + apartment.area.units + '<br>';
+document.body.innerHTML +=
+  'Balcony: ' + apartment.area.balcony + ' ' + apartment.area.units + '<br>';
+
+document.body.innerHTML +=
+  'Price: ' + apartment.price.rent + ' ' + apartment.price.currency + '<br>';
+
+const mesto = apartment.city;
+const castMesta = apartment.district;
+
+document.body.innerHTML += 'City: ' + mesto + ', ' + castMesta + '<br>';
+
+apartment.status = 'taken';
+
+document.body.innerHTML += 'Apartment is ' + apartment.status + '<br>';
+*/
+/*Pomocí tečkové notace vypište do stránky dispozici bytu.
+Vypište do stránky čistý nájem bez poplatků.
+Vypište do stránky celý objekt představující výměru bytu.
+Do separátních proměnných uložte město a městskou část. Vypište je do stránky.
+Změnte stav inzerátu z 'free' na 'taken'.
+*/
+//CVIČENÍ KNIHOVNA
+/*
+const knihovna = {
+  regal: {
+    kniha1: {
+      nazev: 'Solaris',
+      autor: 'Stanislav Lem',
+      pocetStran: 287,
+      zanr: 'sci-fi',
+    },
+    kniha2: {
+      nazev: 'Stopařův průvodce po galaxii',
+      autor: 'Dougles Adams',
+      pocetStran: 586,
+      zanr: 'sci-fi',
+    },
+  },
+};
+*/
+
+//CVIČENÍ OČKOVÁNÍ - OBJEKTY
+
+const person = {
+  name: prompt('Zadej jméno a příjmení:'),
+  age: Number(prompt('Zadej svůj věk:')),
+  language: prompt('EN / CZ'),
+};
+document.body.innerHTML =
+  '<h1>' +
+  person.name +
+  ', věk: ' +
+  person.age +
+  ', jazyk: ' +
+  person.language +
+  '</h1>';
+
+/*
+Vytvořte objekt person, do kterého vložte uživatelem zadané údaje. Objekt bude mít následující strukturu
+{
+  name: 'Květoslav Voňavý',
+  age: 67,
+}
+Přidejte do objektu person údaj o tom, v jakém jazyce si uživatel přeje komunikovat. Zjistěte jej z objektu window.
+Poté, co uživatel zadá všechny údaje, vypište do stránky objekt person se všemi jeho vlastnostmi v nějakém hezkém formátu a zkontrolujte, že obsahuje správné informace.*/
